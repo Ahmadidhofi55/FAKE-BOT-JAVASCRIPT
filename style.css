@@ -1,0 +1,99 @@
+*, html, body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: cambria;
+}
+
+
+.container{
+ width: 500px;
+ margin: 0 auto;
+}
+
+.wrapper{
+ display: flex;
+ justify-content: center;
+ min-height: 100vh;
+ align-items: center;
+ flex-direction: column;
+ min-width: 325px;
+}
+
+.content{
+ margin: 8px;
+}
+
+input{
+    border: none;
+    background-color: #eaeaea;
+    color: #222222;
+    padding: 16px;
+    font-size: 24px;
+    margin-top: 10px;
+    max-width: 300px;
+}
+
+button{
+    border: none;
+    background-color: lightseagreen;
+    font-size: 24px;
+    padding: 16px;
+    margin-left: 10px;
+    height: 65px;
+    color: #eaeaea;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #333333;
+    transition: 0.5s all rase-in-out ;
+    -webkit-transition: 0.5s all rase-in-out ;
+    -moz-transition: 0.5s all rase-in-out ;
+    -ms-transition: 0.5s all rase-in-out ;
+    -o-transition: 0.5s all rase-in-out ;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#pertanyaan{
+    font-size: 1.6em;
+    font-weight: 500;
+}
+
+#loaders{
+      display: none;
+      width: 85px;
+      height: 85px;
+      position: absolute;
+      border-top: 15px solid lightseagreen;
+      border-radius: 50%;
+      top: 50%;
+      left: 50%;
+      z-index: 9;
+      animation: 1s spin infinite linear;
+}
+
+@keyframes spin {
+    0%{
+     transform: rotate(90deg);
+     -webkit-transform: rotate(90deg);
+     -moz-transform: rotate(90deg);
+     -ms-transform: rotate(90deg);
+     -o-transform: rotate(90deg);
+}
+    
+    100%{
+     transform: rotate(360deg);
+     -webkit-transform: rotate(360deg);
+     -moz-transform: rotate(360deg);
+     -ms-transform: rotate(360deg);
+     -o-transform: rotate(360deg);
+}
+}
